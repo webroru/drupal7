@@ -1,0 +1,107 @@
+2023/09/01 21:07:33 [notice] 1#1: using the "epoll" event method
+2023/09/01 21:07:33 [notice] 1#1: nginx/1.23.4
+2023/09/01 21:07:33 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r4) 
+2023/09/01 21:07:33 [notice] 1#1: OS: Linux 5.15.0-76-generic
+2023/09/01 21:07:33 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/01 21:07:33 [notice] 1#1: start worker processes
+2023/09/01 21:07:33 [notice] 1#1: start worker process 20
+2023/09/01 21:07:33 [notice] 1#1: start worker process 21
+2023/09/01 21:07:33 [notice] 1#1: start worker process 22
+2023/09/01 21:07:33 [notice] 1#1: start worker process 23
+2023/09/01 21:25:58 [warn] 21#21: *88 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 172.21.0.1, server: , request: "GET /sites/default/files/js/js_etBoa3xi0mpzYE6kTZYCbM-FVIQtbAdSmUOJDQNkg_I.js?scope=footer&delta=0&language=en&theme=claro&include=eJx9UUFywyAM_BCx39CnCFAdpgIxEmSavr6KDe44h56A1WpXWgILrlF6BVqq8Cao6gKXht-tA83SH3KjVL7U6VMb5tWDogsEwmsAiROGmFMxGdMuLBko_UzaRuxNRdvThLaDM0wgtPTA3eCCN_CENljlokaYJqN6vJbMsRPqpfHTvC9AYCKoNrLeWVro7RQZ7ws7Jq0EAV1jJg-yjtN1RZmk131Jls-wThaUlF0S6x0tk8b91drlXPpE3tf0Vs1QYEP5_xPmJG-TLagBKn4c8e95j94Cj5sZ6C9nCcDt HTTP/1.1", upstream: "fastcgi://172.21.0.2:9000", host: "localhost:8081", referrer: "http://localhost:8081/admin/modules"
+2023/09/01 21:29:09 [warn] 22#22: *90 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/2/00/0000000002 while reading upstream, client: 172.21.0.1, server: , request: "GET /admin/modules HTTP/1.1", upstream: "fastcgi://172.21.0.2:9000", host: "localhost:8081", referrer: "http://localhost:8081/admin/modules"
+2023/09/01 21:58:26 [warn] 22#22: *123 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/3/00/0000000003 while reading upstream, client: 172.21.0.1, server: , request: "GET /sites/default/files/js/js_f29vf4zftRr2g60A3qU_FxIgKHbyDybcXZk0e3Bil80.js?scope=footer&delta=0&language=en&theme=claro&include=eJx9UEFuAyEM_BBZ3tCXVAYsgurFyIZN0tfX2SyJkkMvgD3j8TCRBX2S0YCWJpwFVV3k2vHaB9CEXp0TlfqjTm_acfUBFF0kEPYRJM02pLVUkzHtyrICld9Jy8TBVLTfTCg_OMcSiL1suC9wW8GL-v1cVk6D0KVAnCd3L96mOwRCs9-4qskc6w6wwnYygvk-s_Q4-gRm_SaVijaCiK4zUwDxx-2GokzS_b0UC0Yfs8USkrpLYjujhdF53EeHPH_77Hw6D4auUCGj_J_-dPLhbEGN0PBrzz2U_N1KQz8ff6ILvFU HTTP/1.1", upstream: "fastcgi://172.21.0.2:9000", host: "localhost:8081", referrer: "http://localhost:8081/admin/reports/dblog"
+2023/09/01 22:11:27 [warn] 23#23: *165 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/4/00/0000000004 while reading upstream, client: 172.21.0.1, server: , request: "GET /sites/default/files/js/js_-uqZObMK_Sn7gbqlF-cSc1zQ6wAZ4nNjNnG3xm2b8J8.js?scope=footer&delta=0&language=en&theme=olivero&include=eJx9UEFyxCAM-xAkb-hLOgbcxFuCGRs2ze9LtmHTzXR6QkiyEfIsOAapGeKQhSdBVeN3kpPHHxQZwu1gD2tAx_VpOEhIqZOp4FepELt0MjZS-lSjmxZcRgd62eEL3fFhMhwbFB4zrygYrNusi-xP4QMxGJ1Ziq-lb-j3pyvBnSYoxMkqtiABZPtLzELLb0kRxM92pYBXLoEIr6-NkOYI7fOFOTqQ8ThNVZRu2vFALcPRJrVWJD1CY55RQpuu-2gVq2VrLUwn8_JcAeeaukCCCeX_xnuSS7IB1UPGt7BQMo6m90wZxw6-AeCG0Lc HTTP/1.1", upstream: "fastcgi://172.21.0.2:9000", host: "localhost:8081", referrer: "http://localhost:8081/dhl-location-finder/location"
+2023/09/01 22:22:52 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/01 22:22:52 [notice] 20#20: gracefully shutting down
+2023/09/01 22:22:52 [notice] 22#22: gracefully shutting down
+2023/09/01 22:22:52 [notice] 22#22: exiting
+2023/09/01 22:22:52 [notice] 22#22: exit
+2023/09/01 22:22:52 [notice] 21#21: gracefully shutting down
+2023/09/01 22:22:52 [notice] 21#21: exiting
+2023/09/01 22:22:52 [notice] 20#20: exiting
+2023/09/01 22:22:52 [notice] 20#20: exit
+2023/09/01 22:22:52 [notice] 21#21: exit
+2023/09/01 22:22:52 [notice] 23#23: gracefully shutting down
+2023/09/01 22:22:52 [notice] 23#23: exiting
+2023/09/01 22:22:52 [notice] 23#23: exit
+2023/09/01 22:22:52 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/09/01 22:22:52 [notice] 1#1: worker process 20 exited with code 0
+2023/09/01 22:22:52 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/01 22:22:52 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/01 22:22:52 [notice] 1#1: worker process 21 exited with code 0
+2023/09/01 22:22:52 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/01 22:22:52 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/09/01 22:22:52 [notice] 1#1: worker process 23 exited with code 0
+2023/09/01 22:22:52 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/01 22:22:52 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/09/01 22:22:52 [notice] 1#1: worker process 22 exited with code 0
+2023/09/01 22:22:52 [notice] 1#1: exit
+2024/04/07 09:51:09 [notice] 1#1: using the "epoll" event method
+2024/04/07 09:51:09 [notice] 1#1: nginx/1.23.4
+2024/04/07 09:51:09 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r4) 
+2024/04/07 09:51:09 [notice] 1#1: OS: Linux 5.15.0-92-generic
+2024/04/07 09:51:09 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/07 09:51:09 [notice] 1#1: start worker processes
+2024/04/07 09:51:09 [notice] 1#1: start worker process 20
+2024/04/07 09:51:09 [notice] 1#1: start worker process 21
+2024/04/07 09:51:09 [notice] 1#1: start worker process 22
+2024/04/07 09:51:09 [notice] 1#1: start worker process 23
+2024/04/07 11:37:29 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/07 11:37:29 [notice] 20#20: gracefully shutting down
+2024/04/07 11:37:29 [notice] 23#23: gracefully shutting down
+2024/04/07 11:37:29 [notice] 22#22: gracefully shutting down
+2024/04/07 11:37:29 [notice] 20#20: exiting
+2024/04/07 11:37:29 [notice] 23#23: exiting
+2024/04/07 11:37:29 [notice] 22#22: exiting
+2024/04/07 11:37:29 [notice] 22#22: exit
+2024/04/07 11:37:29 [notice] 20#20: exit
+2024/04/07 11:37:29 [notice] 23#23: exit
+2024/04/07 11:37:29 [notice] 21#21: gracefully shutting down
+2024/04/07 11:37:29 [notice] 21#21: exiting
+2024/04/07 11:37:29 [notice] 21#21: exit
+2024/04/07 11:37:29 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2024/04/07 11:37:29 [notice] 1#1: worker process 20 exited with code 0
+2024/04/07 11:37:29 [notice] 1#1: worker process 21 exited with code 0
+2024/04/07 11:37:29 [notice] 1#1: worker process 22 exited with code 0
+2024/04/07 11:37:29 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/07 11:37:29 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/07 11:37:29 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2024/04/07 11:37:29 [notice] 1#1: worker process 23 exited with code 0
+2024/04/07 11:37:29 [notice] 1#1: exit
+2024/04/07 11:37:52 [notice] 1#1: using the "epoll" event method
+2024/04/07 11:37:52 [notice] 1#1: nginx/1.23.4
+2024/04/07 11:37:52 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r4) 
+2024/04/07 11:37:52 [notice] 1#1: OS: Linux 5.15.0-92-generic
+2024/04/07 11:37:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/07 11:37:52 [notice] 1#1: start worker processes
+2024/04/07 11:37:52 [notice] 1#1: start worker process 20
+2024/04/07 11:37:52 [notice] 1#1: start worker process 21
+2024/04/07 11:37:52 [notice] 1#1: start worker process 22
+2024/04/07 11:37:52 [notice] 1#1: start worker process 23
+2024/04/07 11:55:05 [warn] 22#22: *6 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 172.23.0.1, server: , request: "GET /admin/config/people/hybridauth HTTP/1.1", upstream: "fastcgi://172.23.0.3:9000", host: "localhost", referrer: "http://localhost/admin/config/people/hybridauth/provider/Facebook?destination=admin/config/people/hybridauth"
+2024/04/07 12:59:24 [error] 20#20: *174 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.23.0.1, server: , request: "GET /hybridauth/endpoint?hauth.start=Facebook&hauth.time=1712494704 HTTP/1.1", upstream: "fastcgi://172.23.0.3:9000", host: "localhost", referrer: "http://localhost/"
+2024/04/07 18:05:16 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/07 18:05:16 [notice] 21#21: gracefully shutting down
+2024/04/07 18:05:16 [notice] 21#21: exiting
+2024/04/07 18:05:16 [notice] 20#20: gracefully shutting down
+2024/04/07 18:05:16 [notice] 20#20: exiting
+2024/04/07 18:05:16 [notice] 21#21: exit
+2024/04/07 18:05:16 [notice] 20#20: exit
+2024/04/07 18:05:16 [notice] 22#22: gracefully shutting down
+2024/04/07 18:05:16 [notice] 22#22: exiting
+2024/04/07 18:05:16 [notice] 22#22: exit
+2024/04/07 18:05:16 [notice] 23#23: gracefully shutting down
+2024/04/07 18:05:16 [notice] 23#23: exiting
+2024/04/07 18:05:16 [notice] 23#23: exit
+2024/04/07 18:05:16 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/07 18:05:16 [notice] 1#1: worker process 21 exited with code 0
+2024/04/07 18:05:16 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/07 18:05:16 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2024/04/07 18:05:16 [notice] 1#1: worker process 22 exited with code 0
+2024/04/07 18:05:16 [notice] 1#1: worker process 23 exited with code 0
+2024/04/07 18:05:16 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/07 18:05:16 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2024/04/07 18:05:16 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/07 18:05:16 [notice] 1#1: worker process 20 exited with code 0
+2024/04/07 18:05:16 [notice] 1#1: exit
