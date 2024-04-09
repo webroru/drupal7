@@ -1,0 +1,6 @@
+name = Donstu.ru OpenID Connect
+description = OpenID Connect protocol for user authentication via donstu.ru.
+core = 7.x
+package = OAuth2
+
+dependencies[] = openid_connect
