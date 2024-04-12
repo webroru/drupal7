@@ -9,3 +9,12 @@ function openid_donstu_ctools_plugin_directory($module, $plugin)
         return 'plugins/' . $plugin;
     }
 }
+
+function openid_donstu_form_openid_connect_login_form_alter(&$form, &$form_state, $form_id)
+{
+    if (!isset($form['openid_connect_client_donstu_login'])) {
+        return;
+    }
+
+    $form['openid_connect_client_donstu_login']['#value'] = 'Вход через сайт Edu.donstu.ru';
+}
