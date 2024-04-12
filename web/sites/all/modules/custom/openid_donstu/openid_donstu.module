@@ -3,8 +3,9 @@
 /**
  * Implements hook_ctools_plugin_directory().
  */
-function openid_donstu_ctools_plugin_directory($module, $plugin) {
-  if ($module === 'openid_connect') {
-    return 'plugins/' . $plugin;
-  }
+function openid_donstu_ctools_plugin_directory($module, $plugin)
+{
+    if ($module === 'openid_connect') {
+        return 'plugins/' . $plugin;
+    }
 }
