@@ -14,6 +14,27 @@ class OpenIDConnectClientDonstu extends OpenIDConnectClientBase
         ];
     }
 
+    public function authorize($scope = 'openid email')
+    {
+        $redirect_uri = OPENID_CONNECT_REDIRECT_PATH_BASE . '/' . $this->name;
+        $url_options = [
+            'query' => [
+                'client_id' => $this->getSetting('client_id'),
+                'redirect_uri' => url($redirect_uri, [
+                    'absolute' => true,
+                    'language' => LANGUAGE_NONE,
+                ]),
+                'state' => openid_connect_create_state_token(),
+            ],
+        ];
+        $endpoints = $this->getEndpoints();
+        // Clear $_GET['destination'] because we need to override it.
+        unset($_GET['destination']);
+//        drupal_goto($endpoints['authorization'], $url_options);
+        $path = $endpoints['authorization'] . '?' . drupal_http_build_query($url_options['query']);
+        header('Location: ' . $path, true, 302);
+    }
+
     public function retrieveTokens($authorization_code)
     {
         // Exchange `code` for access token and ID token.
