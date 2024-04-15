@@ -84,14 +84,16 @@ class OpenIDConnectClientDonstu extends OpenIDConnectClientBase
         }
     }
 
-    public function retrieveUserInfo($access_token) {
+    public function retrieveUserInfo($access_token)
+    {
         $userinfo = parent::retrieveUserInfo($access_token);
         $userinfo['sub'] = $userinfo['email'];
 
         return $userinfo;
     }
 
-    public function decodeIdToken($id_token) {
-        return[];
+    public function decodeIdToken($id_token)
+    {
+        return [];
     }
 }
