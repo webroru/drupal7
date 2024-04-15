@@ -33,6 +33,7 @@ class OpenIDConnectClientDonstu extends OpenIDConnectClientBase
 //        drupal_goto($endpoints['authorization'], $url_options);
         $path = $endpoints['authorization'] . '?' . drupal_http_build_query($url_options['query']);
         header('Location: ' . $path, true, 302);
+        drupal_exit($path);
     }
 
     public function retrieveTokens($authorization_code)
@@ -56,11 +57,16 @@ class OpenIDConnectClientDonstu extends OpenIDConnectClientBase
         ];
         $endpoints = $this->getEndpoints();
         $response = drupal_http_request($endpoints['token'], $request_options);
-        if (!isset($response->error) && $response->code === 200) {
-            $json = json_decode($response->data, true);
-            $response_data = $json['body'];
+        if (!isset($response->error) && $response->code === '200') {
+            $response_data = json_decode($response->data, true);
+
+            if (isset($response_data['state']) && $response_data['state'] === -2) {
+                openid_connect_log_request_error(__FUNCTION__, $this->name, $response);
+                return false;
+            }
+
             $tokens = [
-                'id_token' => $response_data['id_token'],
+                'id_token' => '',
                 'access_token' => $response_data['access_token'],
             ];
             if (array_key_exists('expires_in', $response_data)) {
@@ -83,5 +89,9 @@ class OpenIDConnectClientDonstu extends OpenIDConnectClientBase
         $userinfo['sub'] = $userinfo['email'];
 
         return $userinfo;
+    }
+
+    public function decodeIdToken($id_token) {
+        return[];
     }
 }
