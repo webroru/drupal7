@@ -21,13 +21,11 @@
         "ext-gd": "*",
         "ext-json": "*",
         "ext-openssl": "*",
-        "ext-pcntl": "*",
         "ext-pdo": "*",
         "ext-xml": "*",
         "composer/installers": "^1.9",
         "composer/semver": "^1.4",
         "cweagans/composer-patches": "^1.7",
-        "drupal-composer/preserve-paths": "^0.1.6",
         "drupal/better_exposed_filters": "^3.2",
         "drupal/block_class": "^2.3",
         "drupal/bootstrap": "^3.4",
@@ -93,6 +91,7 @@
         "drupal/webform": "^3.24",
         "drupal/wysiwyg": "^2.2",
         "drush/drush": "^8.0",
+        "sandykadam/preserve-paths": "^0.4.0",
         "symfony/filesystem": "~2.7 || ^3",
         "webflo/drupal-finder": "^1.2.1"
     },
@@ -106,7 +105,7 @@
         "allow-plugins": {
             "composer/installers": true,
             "cweagans/composer-patches": true,
-            "drupal-composer/preserve-paths": false
+            "sandykadam/preserve-paths": true
         }
     },
     "autoload": {
