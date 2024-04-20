@@ -1,0 +1,6 @@
+name = SNILS Registration
+description = Registration by SNILS and existed real name.
+package = NTB
+core = 7.x
+
+; $Id$

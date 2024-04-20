@@ -1,0 +1,6 @@
+name = Search Numeration
+description = Adding item counter on the Result Search Page.
+package = NTB
+core = 7.x
+
+; $Id$

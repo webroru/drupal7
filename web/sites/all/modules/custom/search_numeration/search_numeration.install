@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Schema definitions install/update/uninstall hooks.
+ */
+
+/**
+	* Implement hook_uninstall()
+	*/
+function search_numeration_uninstall() {
+	db_query("DELETE FROM {variable} WHERE name LIKE 'snils_registration%%'");
+}

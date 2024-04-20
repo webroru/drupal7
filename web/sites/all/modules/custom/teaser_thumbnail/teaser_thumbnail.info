@@ -1,0 +1,6 @@
+name = Teaser Thumbnail
+description = Generate Thumbnail Image for Teaser.
+package = NTB
+core = 7.x
+
+; $Id$

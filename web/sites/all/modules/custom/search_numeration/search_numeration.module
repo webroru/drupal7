@@ -1,0 +1,12 @@
+<?php
+
+
+function bootstrap_preprocess_search_results(&$variables) {
+  global $pager_page_array;
+  $variables['search_results'] = '';
+  foreach ($variables['results'] as $id => $result) {
+    $count = ($pager_page_array[0] * 10) + ($id + 1);
+    $result['title'] = $count . '. ' . $result['title'];
+    $variables['search_results'] .=  theme('search_result', array('result' => $result, 'module' => $variables['module']));
+  }
+}

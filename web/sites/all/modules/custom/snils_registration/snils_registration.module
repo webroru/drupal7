@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * Implementation of hook_form_alter().
+ */
+
+function snils_registration_form_user_register_form_alter(&$form, &$form_state, $form_id) {
+//	var_dump($form['account']);
+	$form['account']['name']['#title'] = t('Full name');
+	$form['account']['name']['#description'] = t('Enter your first name and middle name. For example, Ivan Ivanov.');
+//	array_unshift($form['#validate'], 'snils_registration_form_user_register_form_validate');
+//	$form['#submit'][] = 'custom_form_user_register_form_submit';
+	$form['#validate'][] = 'snils_registration_form_user_register_form_validate';
+}
+
+function snils_registration_form_user_login_block_alter(&$form, &$form_state, $form_id) {
+	$form['name']['#title'] = t('Full name');
+}
+
+function snils_registration_form_user_register_form_validate($form, &$form_state) {
+
+	$snils = $form_state['values']['field_snils']['und'][0]['value'];
+	$name = $form_state['values']['name'];
+
+	$query = new EntityFieldQuery();
+	$result = $query
+		->entityCondition('entity_type', 'node')
+		->entityCondition('bundle', 'snils')
+		->propertyCondition('status', 1)
+		->propertyCondition('title', $name)
+		->fieldCondition('field_snils', 'value', $snils, '=')
+		->addTag('DANGEROUS_ACCESS_CHECK_OPT_OUT')
+		->execute();
+
+	if (!isset($result['node'])) {
+		form_set_error('', t('In the database there is no record of the user with the specified name and SNILS. Please check the data you entered. If you feel that you have entered the correct information, please contact the site administration.'));
+	}
+}
