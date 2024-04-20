@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e161cb3b9b0b13c595f0f9ba8bcf4840",
+    "content-hash": "b2463a69b84fa75c6205e436653637a5",
     "packages": [
         {
             "name": "composer/installers",
@@ -574,6 +574,105 @@
             "time": "2017-01-20T21:14:22+00:00"
         },
         {
+            "name": "drupal/addthis",
+            "version": "4.0.0-alpha6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/addthis.git",
+                "reference": "7.x-4.0-alpha6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/addthis-7.x-4.0-alpha6.zip",
+                "reference": "7.x-4.0-alpha6",
+                "shasum": "b105a279db7640ad9234fbe1541f2d5a941f2cc5"
+            },
+            "require": {
+                "drupal/drupal": "*"
+            },
+            "require-dev": {
+                "drupal/addthis_displays": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "7.x-4.0-alpha6",
+                    "datestamp": "1434368580",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Les Lim",
+                    "homepage": "https://www.drupal.org/user/84263"
+                },
+                {
+                    "name": "Nitesh Sethia",
+                    "homepage": "https://www.drupal.org/user/2474982"
+                },
+                {
+                    "name": "TomiMikola",
+                    "homepage": "https://www.drupal.org/user/183191"
+                },
+                {
+                    "name": "_doyle_",
+                    "homepage": "https://www.drupal.org/user/1799556"
+                },
+                {
+                    "name": "divesh.kumar",
+                    "homepage": "https://www.drupal.org/user/390770"
+                },
+                {
+                    "name": "gisle",
+                    "homepage": "https://www.drupal.org/user/409554"
+                },
+                {
+                    "name": "iSampo",
+                    "homepage": "https://www.drupal.org/user/669530"
+                },
+                {
+                    "name": "janip",
+                    "homepage": "https://www.drupal.org/user/1356218"
+                },
+                {
+                    "name": "juhaniemi",
+                    "homepage": "https://www.drupal.org/user/157732"
+                },
+                {
+                    "name": "juhovaltonen",
+                    "homepage": "https://www.drupal.org/user/395432"
+                },
+                {
+                    "name": "kapil.ropalekar",
+                    "homepage": "https://www.drupal.org/user/2393402"
+                },
+                {
+                    "name": "matglas86",
+                    "homepage": "https://www.drupal.org/user/573464"
+                },
+                {
+                    "name": "naveenvalecha",
+                    "homepage": "https://www.drupal.org/user/2665733"
+                },
+                {
+                    "name": "vesapalmu",
+                    "homepage": "https://www.drupal.org/user/75070"
+                }
+            ],
+            "description": "AddThis.com provides an easy way to share your content across the web.",
+            "homepage": "https://www.drupal.org/project/addthis",
+            "support": {
+                "source": "https://git.drupalcode.org/project/addthis"
+            }
+        },
+        {
             "name": "drupal/better_exposed_filters",
             "version": "3.6.0",
             "source": {
@@ -970,6 +1069,82 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/composer_autoloader",
                 "issues": "http://drupal.org/project/issues/composer_autoloader"
+            }
+        },
+        {
+            "name": "drupal/computed_field",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/computed_field.git",
+                "reference": "7.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/computed_field-7.x-1.1.zip",
+                "reference": "7.x-1.1",
+                "shasum": "2a1cb9f6b458733cd3c73a43d03254db69692c1a"
+            },
+            "require": {
+                "drupal/drupal": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "7.x-1.1",
+                    "datestamp": "1453389245",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Agileware",
+                    "homepage": "https://www.drupal.org/user/89106"
+                },
+                {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                },
+                {
+                    "name": "dealancer",
+                    "homepage": "https://www.drupal.org/user/243418"
+                },
+                {
+                    "name": "joachim",
+                    "homepage": "https://www.drupal.org/user/107701"
+                },
+                {
+                    "name": "markus_petrux",
+                    "homepage": "https://www.drupal.org/user/39593"
+                },
+                {
+                    "name": "Moonshine",
+                    "homepage": "https://www.drupal.org/user/133705"
+                },
+                {
+                    "name": "nickcaballero",
+                    "homepage": "https://www.drupal.org/user/588336"
+                },
+                {
+                    "name": "Pedro Lozano",
+                    "homepage": "https://www.drupal.org/user/123766"
+                },
+                {
+                    "name": "ram4nd",
+                    "homepage": "https://www.drupal.org/user/601534"
+                }
+            ],
+            "description": "Defines a field type that allows values to be \"computed\" via PHP code.",
+            "homepage": "https://www.drupal.org/project/computed_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/computed_field"
             }
         },
         {
@@ -1789,6 +1964,90 @@
             "homepage": "https://www.drupal.org/project/facetapi_bonus",
             "support": {
                 "source": "https://git.drupalcode.org/project/facetapi_bonus"
+            }
+        },
+        {
+            "name": "drupal/features",
+            "version": "2.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/features.git",
+                "reference": "7.x-2.15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/features-7.x-2.15.zip",
+                "reference": "7.x-2.15",
+                "shasum": "d136e820a20f71c0797f6254f477897da70708b6"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "require-dev": {
+                "drupal/strongarm": "*",
+                "drupal/views": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "7.x-2.15",
+                    "datestamp": "1691595136",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "donquixote",
+                    "homepage": "https://www.drupal.org/user/459338"
+                },
+                {
+                    "name": "e2thex",
+                    "homepage": "https://www.drupal.org/user/189123"
+                },
+                {
+                    "name": "febbraro",
+                    "homepage": "https://www.drupal.org/user/43670"
+                },
+                {
+                    "name": "flocondetoile",
+                    "homepage": "https://www.drupal.org/user/2006064"
+                },
+                {
+                    "name": "jmiccolis",
+                    "homepage": "https://www.drupal.org/user/31731"
+                },
+                {
+                    "name": "joseph.olstad",
+                    "homepage": "https://www.drupal.org/user/1321830"
+                },
+                {
+                    "name": "matthand",
+                    "homepage": "https://www.drupal.org/user/171527"
+                },
+                {
+                    "name": "mpotter",
+                    "homepage": "https://www.drupal.org/user/616192"
+                }
+            ],
+            "description": "Provides feature management for Drupal.",
+            "homepage": "https://www.drupal.org/project/features",
+            "support": {
+                "source": "https://git.drupalcode.org/project/features"
             }
         },
         {
@@ -4166,6 +4425,63 @@
             "homepage": "https://www.drupal.org/project/tagclouds",
             "support": {
                 "source": "https://git.drupalcode.org/project/tagclouds"
+            }
+        },
+        {
+            "name": "drupal/taxonomy_display",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/taxonomy_display.git",
+                "reference": "7.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/taxonomy_display-7.x-1.1.zip",
+                "reference": "7.x-1.1",
+                "shasum": "2a79bc530b063ce824201ad595b32260661e3611"
+            },
+            "require": {
+                "drupal/ctools": "*",
+                "drupal/drupal": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "7.x-1.1",
+                    "datestamp": "1351568834",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "codycraven",
+                    "homepage": "https://www.drupal.org/user/524692"
+                },
+                {
+                    "name": "hass",
+                    "homepage": "https://www.drupal.org/user/85918"
+                },
+                {
+                    "name": "lotyrin",
+                    "homepage": "https://www.drupal.org/user/216580"
+                },
+                {
+                    "name": "roberttstephens",
+                    "homepage": "https://www.drupal.org/user/2102486"
+                }
+            ],
+            "description": "Modify the display of taxonomy term pages per vocabulary.",
+            "homepage": "https://www.drupal.org/project/taxonomy_display",
+            "support": {
+                "source": "https://git.drupalcode.org/project/taxonomy_display"
             }
         },
         {
@@ -6652,7 +6968,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/addthis": 15
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
