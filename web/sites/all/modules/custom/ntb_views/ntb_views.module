@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Code for the ntb_views feature.
+ */
+
+include_once 'ntb_views.features.inc';

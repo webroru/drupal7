@@ -1,0 +1,15 @@
+name = ntb_ds
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = ds
+features[ctools][] = ds:ds:1
+features[ds_field_settings][] = node|catalog|search_result
+features[ds_field_settings][] = node|catalog|short
+features[ds_field_settings][] = node|catalog|teaser
+features[ds_layout_settings][] = node|catalog|search_result
+features[ds_layout_settings][] = node|catalog|short
+features[ds_layout_settings][] = node|catalog|teaser
+features[ds_layout_settings][] = taxonomy_term|catalog|full
+features[ds_view_modes][] = short
+features[features_api][] = api:2

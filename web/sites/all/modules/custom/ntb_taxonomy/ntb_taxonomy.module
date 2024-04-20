@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Code for the ntb_taxonomy feature.
+ */
+
+include_once 'ntb_taxonomy.features.inc';

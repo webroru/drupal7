@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Code for the ntb_search_api_autocomplete_search feature.
+ */
+
+include_once 'ntb_search_api_autocomplete_search.features.inc';

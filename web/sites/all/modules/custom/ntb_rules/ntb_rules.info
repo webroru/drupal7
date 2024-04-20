@@ -1,0 +1,15 @@
+name = ntb_rules
+core = 7.x
+package = Features
+dependencies[] = download_count
+dependencies[] = entity
+dependencies[] = rules
+features[features_api][] = api:2
+features[rules_config][] = rules_activate_user_whith_snils
+features[rules_config][] = rules_activate_users_with_snils
+features[rules_config][] = rules_delete_user_with_nonexistent_name
+features[rules_config][] = rules_delete_user_with_nonexistent_snils
+features[rules_config][] = rules_download_counter
+features[rules_config][] = rules_name_check
+features[rules_config][] = rules_snils_check
+features[rules_config][] = rules_user_delete

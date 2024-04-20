@@ -1,0 +1,7 @@
+name = ntb_image
+core = 7.x
+package = Features
+dependencies[] = flexslider
+dependencies[] = image
+features[features_api][] = api:2
+features[image][] = slider

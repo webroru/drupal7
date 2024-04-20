@@ -1,0 +1,16 @@
+name = ntb_taxonomy
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = taxonomy
+dependencies[] = taxonomy_display
+features[ctools][] = taxonomy_display:taxonomy_display:1
+features[features_api][] = api:2
+features[taxonomy][] = authors
+features[taxonomy][] = catalog
+features[taxonomy][] = category_site
+features[taxonomy][] = newsletter
+features[taxonomy][] = tags
+features[taxonomy_display][] = catalog
+features[taxonomy_display][] = tags

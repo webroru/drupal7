@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Code for the ntb_ds feature.
+ */
+
+include_once 'ntb_ds.features.inc';
