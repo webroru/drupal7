@@ -249,11 +249,11 @@
  *   );
  * @endcode
  */
-$databases = array (
-  'default' => 
-  array (
-    'default' => 
-    array (
+$databases = [
+  'default' =>
+  [
+    'default' =>
+    [
       'database' => 'drupal',
       'username' => 'drupal',
       'password' => 'drupal',
@@ -261,9 +261,9 @@ $databases = array (
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
-    ),
-  ),
-);
+    ],
+  ],
+];
 
 /**
  * Quoting of identifiers in MySQL.
