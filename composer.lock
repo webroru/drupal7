@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "baf9fcff7ed89058f1388af7fe62195c",
+    "content-hash": "57d49c08d5054f2a6d3941beb8358c44",
     "packages": [
         {
             "name": "composer/installers",
@@ -6982,6 +6982,66 @@
             }
         },
         {
+            "name": "drupal/yandex_metrics",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/yandex_metrics.git",
+                "reference": "7.x-3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/yandex_metrics-7.x-3.2.zip",
+                "reference": "7.x-3.2",
+                "shasum": "e863989a4279a4be78c78dfa89d345195be7f6a5"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "require-dev": {
+                "drupal/visualization": "*",
+                "drupal/yandex_services_auth": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "7.x-3.2",
+                    "datestamp": "1664304865",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "dillix",
+                    "homepage": "https://www.drupal.org/user/1676156"
+                },
+                {
+                    "name": "kalabro",
+                    "homepage": "https://www.drupal.org/user/1399638"
+                },
+                {
+                    "name": "Konstantin Komelin",
+                    "homepage": "https://www.drupal.org/user/1195752"
+                },
+                {
+                    "name": "Niremizov",
+                    "homepage": "https://www.drupal.org/user/1275810"
+                }
+            ],
+            "description": "Allows to install Yandex.Metrica counter on the site pages.",
+            "homepage": "https://www.drupal.org/project/yandex_metrics",
+            "support": {
+                "source": "https://git.drupalcode.org/project/yandex_metrics"
+            }
+        },
+        {
             "name": "drupal/yandex_services_auth",
             "version": "1.1.0",
             "source": {
@@ -7031,6 +7091,59 @@
             "homepage": "https://www.drupal.org/project/yandex_services_auth",
             "support": {
                 "source": "https://git.drupalcode.org/project/yandex_services_auth"
+            }
+        },
+        {
+            "name": "drupal/zeroclipboard",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/zeroclipboard.git",
+                "reference": "7.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/zeroclipboard-7.x-2.1.zip",
+                "reference": "7.x-2.1",
+                "shasum": "30c97bfda8926a6d3641d52f84a11362b527a565"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/libraries": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "7.x-2.1",
+                    "datestamp": "1449421940",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Matt V.",
+                    "homepage": "https://www.drupal.org/user/88338"
+                },
+                {
+                    "name": "khaled.zaidan",
+                    "homepage": "https://www.drupal.org/user/663072"
+                },
+                {
+                    "name": "nymo",
+                    "homepage": "https://www.drupal.org/user/130221"
+                }
+            ],
+            "description": "Loads Zero Clipboard javascript and swf files to allow copying text to clipboard.",
+            "homepage": "https://www.drupal.org/project/zeroclipboard",
+            "support": {
+                "source": "https://git.drupalcode.org/project/zeroclipboard"
             }
         },
         {
