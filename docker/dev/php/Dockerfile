@@ -1,4 +1,4 @@
-FROM php:7-fpm-alpine
+FROM php:8.2-fpm-alpine
 
 # Install dev dependencies
 RUN apk add --update --no-cache --virtual .build-deps \
@@ -24,10 +24,11 @@ RUN apk add --no-cache \
     libpng \
     libwebp \
     libzip \
-    mysql-client
+    mysql-client \
+    patch
 
 ## Install PECL and PEAR extensions
-RUN pecl install xdebug-3.1.6
+RUN pecl install xdebug
 
 RUN docker-php-ext-configure gd \
     --with-freetype \
