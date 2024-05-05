@@ -39,5 +39,16 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
+  solr:
+    image: solr:7-slim
+    ports:
+      - "8983:8983"
+    volumes:
+      - db-index:/var/solr/:rw
+    command:
+      - solr-precreate
+      - ntb
+
 volumes:
   db-data:
+  db-index:
