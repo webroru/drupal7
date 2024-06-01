@@ -22,3 +22,10 @@ Go to `admin/config/media/file-system` set `/tmp`
 * `docker compose exec php bash`
 * `mkdir web/sites/default/files/privat_files`
 * `chown -R www-data:  web/sites/default/files`
+
+## Solr
+
+Go to `admin/config/search/search_api/server/solr_server/edit`
+Set host `solr`
+
+`docker compose cp web/sites/all/modules/contrib/search_api_solr/solr-conf/7.x solr:/opt/solr/server/solr/mycores/ntb/conf`
