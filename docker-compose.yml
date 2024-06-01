@@ -29,7 +29,14 @@ services:
   php:
     build: docker/dev/php
     volumes:
-      - ./:/var/www/html
+      - ./drush:/var/www/html/drush
+      - ./scripts:/var/www/html/scripts
+      - ./web/sites/all/libraries:/var/www/html/web/sites/all/libraries
+      - ./web/sites/all/modules/custom:/var/www/html/web/sites/all/modules/custom
+      - ./web/sites/all/themes/custom:/var/www/html/web/sites/all/themes/custom
+      - ./composer.json:/var/www/html/composer.json
+      - ./composer.lock:/var/www/html/composer.lock
+      - ./web/sites/default/settings.php:/var/www/html/web/sites/default/settings.php
     working_dir: /var/www/html
     environment:
       PHP_IDE_CONFIG: "serverName=xdebug-docker"

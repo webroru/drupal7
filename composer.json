@@ -114,6 +114,7 @@
         "drupal/taxonomy_menu": "^1.5",
         "drupal/token": "^1.6",
         "drupal/transliteration": "^3.2",
+        "drupal/upgrade_status": "^2.1",
         "drupal/variable": "^2.5",
         "drupal/views": "^3.13",
         "drupal/views_bootstrap": "^3.1",
@@ -183,10 +184,15 @@
             },
             "drupal/quicktabs": {
                 "Database error produced in QuickBlockContent->accessBlock": "https://www.drupal.org/files/issues/2022-05-16/quicktabs-database-error.patch"
+            },
+            "drupal/simplenews": {
+                "Deprecated: Required parameter $data follows optional parameter $conditions": "https://www.drupal.org/files/issues/2022-10-16/simplenewsPHP8deprecation-3315630-2.patch"
             }
         },
         "preserve-paths": [
-            "web/sites"
+            "web/sites/all/libraries",
+            "web/sites/all/modules/custom",
+            "web/sites/all/themes/custom"
         ]
     }
 }
