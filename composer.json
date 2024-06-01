@@ -193,7 +193,9 @@
             }
         },
         "preserve-paths": [
-            "web/sites"
+            "web/sites/all/libraries",
+            "web/sites/all/modules/custom",
+            "web/sites/all/themes/custom"
         ]
     }
 }
